@@ -37,7 +37,6 @@ gem 'paperclip', '~> 5.1.0'
 gem 'paranoia', '~> 2.3.1'
 gem 'pg', '~> 0.21.0'
 gem 'pg_search', '~> 2.0.1'
-gem 'rails-assets-markdown-it', '~> 8.2.1', source: 'https://rails-assets.org'
 gem 'redcarpet', '~> 3.4.0'
 gem 'responders', '~> 2.4.0'
 gem 'rinku', '~> 2.0.2', require: 'rails_rinku'
@@ -53,13 +52,16 @@ gem 'turnout', '~> 2.4.0'
 gem 'uglifier', '~> 3.2.0'
 gem 'unicorn', '~> 5.3.0'
 gem 'whenever', '~> 0.9.7', require: false
+gem 'therubyrhino'
+gem 'activerecord-jdbcpostgresql-adapter', platform: :jruby
 source 'https://rails-assets.org' do
+  gem 'rails-assets-markdown-it', '~> 8.2.1'
   gem 'rails-assets-leaflet'
 end
 
 group :development, :test do
   gem "bullet", '~> 5.5.1'
-  gem 'byebug', '~> 9.1.0'
+  #gem 'byebug', '~> 9.1.0'
   gem 'factory_girl_rails', '~> 4.8.0'
   gem "faker", '~> 1.7.3'
   gem 'i18n-tasks', '~> 0.9.15'

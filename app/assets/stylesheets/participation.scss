@@ -174,7 +174,8 @@
 
     &:hover,
     &:active {
-      background: lighten($proposals, 25%);
+      //background: lighten($proposals, 25%);
+      background: #10d3a2;
       cursor: pointer;
     }
   }
@@ -654,7 +655,8 @@
 .proposals-list .proposal {
 
   .no-image {
-    background: $brand;
+    //background: $brand;
+    background: #ECECEC;
   }
 }
 
@@ -990,8 +992,10 @@
 }
 
 .help-header {
-  background: #fafafa;
-  border-bottom: 1px solid #eee;
+  //background: #fafafa;
+  //border-bottom: 1px solid #eee;
+  background: #f5f5f5;
+  border-bottom: none;
   padding-bottom: $line-height / 2;
   padding-top: $line-height;
 
