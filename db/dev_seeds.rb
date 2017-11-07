@@ -529,13 +529,13 @@ print "Creating polls"
 puts " ✅"
 print "Active Polls"
 poll_active = Poll.create(name: "Active Poll",
-                   slug: "active-poll",
+                   #slug: "active-poll",
                    starts_at: 1.month.ago,
                    ends_at:   1.month.from_now,
                    geozone_restricted: false)
 
 poll_active_geolocalized = Poll.create(name: "Active Poll Restricted",
-                   slug: "active-poll-restricted",
+                   #slug: "active-poll-restricted",
                    starts_at: 1.month.ago,
                    ends_at:   1.month.from_now,
                    geozone_restricted: true,
@@ -544,7 +544,7 @@ poll_active_geolocalized = Poll.create(name: "Active Poll Restricted",
 puts " ✅"
 print "Upcoming Poll"
 poll = Poll.create(name: "Upcoming Poll",
-                   slug: "upcoming-poll",
+                   #slug: "upcoming-poll",
                    starts_at: 1.month.from_now,
                    ends_at:   2.months.from_now)
 
@@ -558,7 +558,7 @@ poll = Poll.create(name: "Recounting Poll",
 puts " ✅"
 print "Expired Poll"
 poll_expired = Poll.create(name: "Expired Poll",
-                   slug: "expired-poll",
+                   #slug: "expired-poll",
                    starts_at: 2.months.ago,
                    ends_at:   1.month.ago)
 

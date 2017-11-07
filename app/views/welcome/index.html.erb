@@ -4,11 +4,12 @@
   <%= render "shared/canonical", href: root_url %>
 <% end %>
 
-<div class="jumbo highlight">
+<div class="jumbo highlight parallax">
+<div class="jumbo slider">
   <div class="row">
     <div class="small-12 medium-9 small-centered column text-center">
-      <h1><%= t("layouts.header.open_city_title") %></h1>
-      <p class="lead">
+      <h1 class="sliderTexto"><%= t("layouts.header.open_city_title") %></h1>
+      <p class="lead sliderTexto">
         <%= t("layouts.header.open_city_slogan_html") %>
       </p>
       <div class="small-12 medium-6 large-4 small-centered">
@@ -16,6 +17,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <% if feature?("user.recommendations") && (@recommended_debates.present? || @recommended_proposals.present?) %>
@@ -30,18 +32,26 @@
     <div class="small-12 column text-center">
       <div class="row margin padding">
         <div class="small-12 medium-3 column">
+          <%= image_tag(image_path_for('Debates.png'), class: 'hide-for-small-only', size: '168x168') %>
           <h2><%= t("welcome.debates.title") %></h2>
           <p><%= t("welcome.debates.description") %></p>
         </div>
         <div class="small-12 medium-3 column">
+      <!--  <%= image_tag(image_path_for('logo_header.png'), class: 'hide-for-small-only', size: '400x80', alt: t("layouts.header.logo")) %> -->
+       <!-- <img alt="" title="CREACIÓN" src="https://baelige.buenosaires.gob.ar/assets/icon_home_proposal-3057b6ea01ca70cd36905c0b1dc3323750012e07fd156dd03750343b933bb283.png" width="168" height="168"> -->
+          <%= image_tag(image_path_for('Propones.png'), class: 'hide-for-small-only', size: '168x168') %>
           <h2><%= t("welcome.proposal.title") %></h2>
           <p><%= t("welcome.proposal.description") %></p>
         </div>
         <div class="small-12 medium-3 column">
+        <!-- <img alt="" title="CREACIÓN" src="https://baelige.buenosaires.gob.ar/assets/icon_home_proposal-3057b6ea01ca70cd36905c0b1dc3323750012e07fd156dd03750343b933bb283.png" width="168" height="168"> -->
+          <%= image_tag(image_path_for('Decides.png'), class: 'hide-for-small-only', size: '168x168') %>
           <h2><%= t("welcome.decide.title") %></h2>
           <p><%= t("welcome.decide.description") %></p>
         </div>
         <div class="small-12 medium-3 column">
+        <!-- <img alt="" title="CREACIÓN" src="https://baelige.buenosaires.gob.ar/assets/icon_home_proposal-3057b6ea01ca70cd36905c0b1dc3323750012e07fd156dd03750343b933bb283.png" width="168" height="168"> -->
+          <%= image_tag(image_path_for('sehace.png'), class: 'hide-for-small-only', size: '168x168') %>
           <h2><%= t("welcome.do.title") %></h2>
           <p><%= t("welcome.do.description") %></p>
         </div>
