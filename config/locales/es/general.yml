@@ -202,20 +202,20 @@ es:
       conditions: Condiciones de uso
       consul: aplicación CONSUL
       consul_url: https://github.com/consul/consul
-      contact_us: Para asistencia técnica entra en
-      copyright: CONSUL, %{year}
+      contact_us: Para asistencia técnica haz
+      copyright: Desarrollado por 
       description: Este portal usa la %{consul} que es %{open_source}.
-      faq: Asistencia técnica
-      open_data_text: Todos los datos del Ayuntamiento son tuyos.
+      faq: click aquí.
+      open_data_text: Toda la informacipon del Partido de General Pueyrredon.
       open_data_title: Datos Abiertos
       open_source: software libre
       open_source_url: http://www.gnu.org/licenses/agpl-3.0.html
       participation_text: Decide cómo debe ser la ciudad que quieres.
-      participation_title: Participación
+      participation_title: Participa
       privacy: Política de privacidad
-      transparency_text: Obtén cualquier información sobre la ciudad.
-      transparency_title: Transparencia
-      transparency_url: https://transparency.consul
+      transparency_text: Conoce de que se trata.
+      transparency_title: Presupuesto participativo
+      transparency_url: https://presupuestoparticipativo.laplata.gob.ar
     header:
       administration_menu: Admin
       administration: Administrar
@@ -224,11 +224,11 @@ es:
       debates: Debates
       external_link_blog: Blog
       external_link_opendata: Datos abiertos
-      external_link_opendata_url: https://opendata.consul
-      external_link_transparency: Transparencia
-      external_link_transparency_url: https://transparency.consul
+      external_link_opendata_url: https://www.mardelplata.gob.ar/
+      external_link_transparency: Presupuesto participativo
+      external_link_transparency_url: https://presupuestoparticipativo.laplata.gob.ar
       locale: 'Idioma:'
-      logo: CONSUL logo
+      logo: CONSUL logo 
       management: Gestión
       moderation: Moderar
       valuation: Evaluación

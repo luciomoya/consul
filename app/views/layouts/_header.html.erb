@@ -24,8 +24,10 @@
           <%= link_to root_path, class: "hide-for-small-only", accesskey: "0" do %>
 <!--            <%= image_tag(image_path_for('logo_header.png'), class: 'hide-for-small-only float-left', size: '400x80', alt: t("layouts.header.logo")) %>
 -->
-            <%= "MDP Elige" %>
+            <%= setting['org_name'] %>
+
           <% end %>
+          <h2 style="font-weight: 100; font-size: 14px; float: right; line-height: 5rem; padding: 3px;">Demo</h2>
         </div>
 
         <div class="top-bar-right">

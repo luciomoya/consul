@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-
+  config.log_level = :debug
   # In the development environment your application's code is reloaded on
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
@@ -15,11 +15,30 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-  config.action_mailer.asset_host = "http://localhost:3000"
+  config.action_mailer.default_url_options = { host: 'http://10.0.0.135', port: 3000 }
+  config.action_mailer.asset_host = "http://10.0.0.135:3000/"
 
   # Deliver emails to a development mailbox at /letter_opener
   config.action_mailer.delivery_method = :letter_opener
+  #config.action_mailer.delivery_method = :smtp
+  #config.action_mailer.smtp_settings = {
+  #address:              'smtp.gmail.com',
+  #port:                 587,
+  #user_name:            'consul.infosis@gmail.com',
+  #password:             'Sistemas2017',
+  #authentication:       'plain',
+  #enable_starttls_auto: true  
+#}
+  #config.action_mailer.smtp_settings = {
+   #   ssl: true,
+    #  address: "mail.infosis-arg.com",
+     # port: 587,
+      #domain: 'infosis-arg.com',
+      #authentication: :login,
+      #user_name: "consul@infosis-arg.com",
+      #password: "Sistemas2017" 
+
+  #}
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
