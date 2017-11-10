@@ -17,19 +17,19 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = false
   #config.action_mailer.default_url_options = { host: 'http://10.0.0.135', port: 3000 }
   #config.action_mailer.asset_host = "http://10.0.0.135:3000/"
-  #config.action_mailer.default_url_options = { host: 'consul.infosis-arg.com:7200' }
-  #config.action_mailer.asset_host = "http://#{Rails.application.secrets.server_name}"
+  config.action_mailer.default_url_options = { host: Rails.application.secrets.server_name }
+  config.action_mailer.asset_host = "http://#{Rails.application.secrets.server_name}"
   # Deliver emails to a development mailbox at /letter_opener
-  config.action_mailer.delivery_method = :letter_opener
-  #config.action_mailer.delivery_method = :smtp
-  #config.action_mailer.smtp_settings = {
-  #address:              'smtp.gmail.com',
-  #port:                 587,
-  #user_name:            'consul.infosis@gmail.com',
-  #password:             'Sistemas2017',
-  #authentication:       'plain',
-  #enable_starttls_auto: true  
-#}
+  #config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.gmail.com',
+  port:                 587,
+  user_name:            'consul.infosis@gmail.com',
+  password:             'Sistemas2017',
+  authentication:       'plain',
+  enable_starttls_auto: true  
+}
   #config.action_mailer.smtp_settings = {
    #   ssl: true,
     #  address: "mail.infosis-arg.com",
