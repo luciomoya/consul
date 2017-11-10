@@ -1,5 +1,12 @@
-<div class="small-12 medium-9 column">
+<div class="small-12 medium-12 column">
   <ul>
+      <li>
+        <%= layout_menu_link_to t("layouts.header.home"),
+                                root_path,
+                                controller_name == 'welcome',
+                                accesskey: "1",
+                                title: t("shared.go_to_page") + t("layouts.header.home") %>
+      </li>
     <% if feature?(:debates) %>
       <li>
         <%= layout_menu_link_to t("layouts.header.debates"),

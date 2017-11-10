@@ -72,6 +72,7 @@ a {
   &:focus {
     //color: $link-hover;
     //outline: 3px solid #ffbf47;
+    outline-color: transparent;
   }
 }
 
@@ -92,6 +93,7 @@ a {
 
   &:focus {
     background : #0a63f8;
+    outline-color: transparent;
   }
 
   &.warning,
@@ -501,6 +503,11 @@ header {
         color: #4486f3;
       }
 
+      &:focus{
+        background: #eeeeee;
+        color: #4486f3;
+      }
+
     }
 
 
@@ -603,6 +610,7 @@ header {
   @include breakpoint(medium) {
     background: #fff;
     padding-bottom: 0;
+    text-transform: uppercase;
   }
 
   ul {
